@@ -52,9 +52,9 @@ def induce_muts(mutation, reference):
 
 if __name__ == "__main__":
     from conversions import fasta_to_dict
-    control = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/CFTR_mrna.fasta"
-    db = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/database.xlsx"
-    out = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/output"
+    control = "path/to/CFTR_mrna.fasta"
+    db = "path/to/database.xlsx"
+    out = "path/to/output"
 
     seqs = fasta_to_dict(control)
     ctrl = seqs['NM_000492.4 Homo sapiens CF transmembrane conductance regulator (CFTR), mRNA']

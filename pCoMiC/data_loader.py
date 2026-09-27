@@ -275,7 +275,7 @@ def char_dataset(db, ref_seq, mut_cats, out, supervised=True):
 
 if __name__ == '__main__':
     from conversions import fasta_to_dict
-    control = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/CFTR_mrna.fasta"
+    control = "path/to/CFTR_mrna.fasta"
     seqs = fasta_to_dict(control)
     ctrl = seqs['NM_000492.4 Homo sapiens CF transmembrane conductance regulator (CFTR), mRNA']
     mut_cats = ['Production', 'Processing', 'Gating', 'Conducting', 'Insufficient']
@@ -283,7 +283,7 @@ if __name__ == '__main__':
     # db = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/database.xlsx"
     # out = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/dataset_char_scores_super.pt"
     # dataset = char_dataset(db, ctrl, mut_cats, out, supervised=True)
-    db = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/database.xlsx"
-    out = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/dataset_split.pt"
+    db = "path/to/database.xlsx"
+    out = "path/to/dataset_split.pt"
     dataset = excel_to_dataset(db, ctrl, mut_cats, out, supervised=True)
 

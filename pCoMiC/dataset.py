@@ -28,10 +28,10 @@ def non_dups(df1, df2, out):
 
 
 if __name__ == '__main__':
-    db1 = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/database.xlsx"
-    db2 = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/to_clean.xlsx"
+    db1 = "path/to/database.xlsx"
+    db2 = "path/to/to_clean.xlsx"
 
-    out = "C:/Users/musta/OneDrive/Desktop/pCoMiC/test_data/cleaned.xlsx"
+    out = "path/to/cleaned.xlsx"
 
     df1 = pd.read_excel(db1)
     df2 = pd.read_excel(db2)

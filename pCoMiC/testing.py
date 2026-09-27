@@ -14,9 +14,9 @@ def make_mut_list(db):
     return out
 
 # If you want to run this, change these to whatever file path each is located in
-control = "C:/Users/musta/Desktop/4A/Biol469/Final/CFTR_mrna.fasta"
-db = "C:/Users/musta/Desktop/4A/Biol469/Final/database.xlsx"
-out = "C:/Users/musta/Desktop/4A/Biol469/Final/"
+control = "path/to/CFTR_mrna.fasta"
+db = "path/to/database.xlsx"
+out = "path/to/Final/"
 
 seqs = fasta_to_dict(control)
 ctrl = seqs['NM_000492.4 Homo sapiens CF transmembrane conductance regulator (CFTR), mRNA']
